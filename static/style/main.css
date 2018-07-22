@@ -59,28 +59,45 @@ body {
     overflow: visible;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.skills-title {
-	display: flex;
+.row {
+	display: flex;	
 	flex-direction: column;
-	justify-content: center;
+	flex-wrap: nowrap;
 }
+
+.skill-title {
+	font-size: 3em;
+	justify-content: center;
+	margin-bottom: 0; 
+}
+
+.skill-subtitle {
+	font-size: 1.4em;
+}
+
+
 
 .wrapper-start {
 	/*padding: .5em 55% 0em 5%;*/
-	/*width: 40%*/
+	margin-top: 2em;
 	flex-basis: 40%;
-	padding: 0 0 0 7%;
+	padding: 0 5% 2em 5%;
 	justify-content: flex-start;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-start;
 }
 
 .wrapper-end {
-	padding: 1em 15%;
+	/*padding: 1em 5%;*/
+	margin-top: 2em;
+	flex-basis: 40%;
+	padding: 0 5% 2em 5%;
 	justify-content: flex-end;
+	display: flex;
+	flex-direction: column;	
 }
 
 .skill-title {
@@ -93,6 +110,31 @@ body {
 
 .subtitle-emp {
 	color: blue;
+}
+
+#first-img {
+	max-width: 13em;
+	max-height: 21em;
+	top: 4em;
+}
+
+.skill-img {
+	width: 13em;
+	height: 21em;
+	max-width: 14em;
+}
+
+
+
+.aside {
+	
+}
+
+.aside a {
+
+	font-size: .5em;
+	margin-top: .25em;
+	margin-left: .55em;
 }
 
 .img-container {
