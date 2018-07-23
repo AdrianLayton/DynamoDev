@@ -1,5 +1,9 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-	background-color: black;
+	background-color: rgb(25,25,25);
 }
 
 a {
@@ -8,15 +12,49 @@ a {
 }
 
 .header {
-	background-color: rgb(40,40,40);
+	position: relative;
+	top: 0%;
+	padding: 1em 5%;
+	background-color: rgb(5,5,5);
+	display: flex;
+	flex-direction: 
+	width: 100%;
 }
 
 .nav-list {
 	list-style-type: none; 
+	display: flex;
+	min-width: 100%;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+	background-color: inherit;
 }
 
 .nav-list li {
-	display: inline-block;
+	background-color: inherit;
+	display: inline;
+	color: #FFFFF6;
+	font-family: sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	text-transform: uppercase;
+	flex-basis: auto;
+	padding: .2em;
+	margin: 0 1em;
+	max-width: auto;
+	max-height: 2em;
+}
+
+.nav-list li:hover {
+	padding: .2em;
+	background-color: #FFFFF6;
+	color: rgb(25,25,25);
+
+}
+
+.top-section {
+	background-color: rgb(25,25,25);
 }
 
 .header-content {
@@ -33,16 +71,41 @@ a {
 	flex-direction: row;
 }
 
+.header-line:nth-child(1) {
+	animation-name: fadeInRight;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+.header-line:nth-child(4){
+	animation-duration: 2s;
+	animation-name: fadeInRight;
+	animation-timing-function: ease-out;
+}
+.header-line:nth-child(5) {
+	animation-name: fadeInRight;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
+}
+
 .header-line:nth-child(2) {
 	justify-content: flex-end;
+	animation-name: fadeInLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
 }
 
 .header-line:nth-child(3) {
 	justify-content: flex-end;
+	animation-name: fadeInLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
 }
 
 .header-line:nth-child(6) {
 	justify-content: flex-end;
+	animation-name: fadeInLeft;
+	animation-duration: 2s;
+	animation-timing-function: ease-out;
 }
 
 .header-text {
@@ -51,6 +114,7 @@ a {
     transition: transform 1.2s cubic-bezier(1,0,.25,1);
     line-height: 1;
     font-size: 6.5vw;
+    font-family: sans-serif;
 }
 
 .skills:before {
@@ -60,7 +124,17 @@ a {
     left: 0;
     width: 50%;
     height: 41px;
-    background-color: #fff;
+    background-color: #FFFFF6;
+}
+
+.skills:after {
+	content: "";
+    position: absolute;
+    bottom: -2.55em;
+    right: 0;
+    width: 50%;
+    height: 41px;
+    background-color: #FFFFF6;
 }
 
 .skills {
