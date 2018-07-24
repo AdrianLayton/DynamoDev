@@ -29,6 +29,10 @@ a {
 	justify-content: flex-end;
 	align-items: center;
 	background-color: inherit;
+	animation-name: zoomIn;
+	animation-duration: 1.5s;
+	animation-delay: 0s;
+	animation-timing-function: ease-out;
 }
 
 .nav-list li {
@@ -73,38 +77,38 @@ a {
 
 .header-line:nth-child(1) {
 	animation-name: fadeInRight;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	animation-timing-function: ease-out;
 }
 .header-line:nth-child(4){
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	animation-name: fadeInRight;
 	animation-timing-function: ease-out;
 }
 .header-line:nth-child(5) {
 	animation-name: fadeInRight;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	animation-timing-function: ease-out;
 }
 
 .header-line:nth-child(2) {
 	justify-content: flex-end;
 	animation-name: fadeInLeft;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	animation-timing-function: ease-out;
 }
 
 .header-line:nth-child(3) {
 	justify-content: flex-end;
 	animation-name: fadeInLeft;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	animation-timing-function: ease-out;
 }
 
 .header-line:nth-child(6) {
 	justify-content: flex-end;
 	animation-name: fadeInLeft;
-	animation-duration: 2s;
+	animation-duration: 1.5s;
 	animation-timing-function: ease-out;
 }
 
@@ -178,8 +182,8 @@ a {
 	/*padding: .5em 55% 0em 5%;*/
 	margin-top: 2em;
 	flex-basis: 40%;
-	padding: 0 5% 2em 5%;
-	justify-content: flex-start;
+	padding: 0 0 2em 15%;
+	justify-content: flex-end;
 	display: flex;
 	flex-direction: column;
 }
@@ -187,8 +191,9 @@ a {
 .wrapper-end {
 	/*padding: 1em 5%;*/
 	margin-top: 2em;
-	flex-basis: 40%;
-	padding: 0 5% 2em 5%;
+	flex-basis: 37%;
+	padding: 0 0 2em 18%;
+
 	justify-content: flex-end;
 	display: flex;
 	flex-direction: column;	
