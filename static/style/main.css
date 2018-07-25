@@ -80,6 +80,7 @@ a {
 	animation-duration: 1.5s;
 	animation-timing-function: ease-out;
 }
+
 .header-line:nth-child(4){
 	animation-duration: 1.5s;
 	animation-name: fadeInRight;
@@ -110,6 +111,12 @@ a {
 	animation-name: fadeInLeft;
 	animation-duration: 1.5s;
 	animation-timing-function: ease-out;
+}
+
+.shake {
+	animation-name: rubberBand;
+	animation-duration: 2s;
+	animation-timing-function: ease-in;
 }
 
 .header-text {
@@ -174,6 +181,18 @@ a {
 
 .skill-subtitle {
 	font-size: 1.4em;
+	color: rgb(10,10,10); 
+	/*color: #e3e3e3;*/
+}
+
+.skill-list {
+	background-color: rgb(55,55,55);
+	padding: 1.5em;
+	line-height: 1.75em;
+	border-radius: .35em;
+	font-size: 1em;
+	font-weight: 600;
+	color : #FFFFF6;
 }
 
 
@@ -184,6 +203,7 @@ a {
 	flex-basis: 40%;
 	padding: 0 0 2em 15%;
 	justify-content: flex-end;
+	align-self: center;
 	display: flex;
 	flex-direction: column;
 }
@@ -193,7 +213,7 @@ a {
 	margin-top: 2em;
 	flex-basis: 37%;
 	padding: 0 0 2em 18%;
-
+	align-self: center;
 	justify-content: flex-end;
 	display: flex;
 	flex-direction: column;	
@@ -205,10 +225,6 @@ a {
 
 .skill-title {
 	color: black;
-}
-
-.skill-subtitle{
-	color: #e3e3e3;
 }
 
 .subtitle-emp {
