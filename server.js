@@ -4,7 +4,7 @@ const path = require('path');
 const AWS = require('aws-sdk')
 const app = express();
 
-var dbFunc = require("./dbfunc");
+var dbFunc = require("./dbFunc.js");
  
 
 app.use(express.static('static'));
