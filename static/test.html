@@ -12,16 +12,19 @@
 <body>
 	<header class="header">
 		<div class="logo-container">
-			
+			<img class="logo" src="./img/ddlogo.png">
 		</div>
 		<ul class="nav-list">
 			<li>Skills</li>
-			<li>Projects</li>
-			<li>About</li>
+			<a href="./blog.html">
+				<li>Blog</li>
+			</a>
+			<a href="./about.html">
+				<li>About</li>
+			</a>
 		</ul>
 	</header>
-	<section class="top-section">
-		<div class="header-content">
+	<section class="header-content">
 			<div class="background-overlay">
 				<div id="l1" class="header-line">
 					<span class="header-text">Extensive full stack</span>
@@ -42,74 +45,78 @@
 					<span class="header-text">and interactive designs</span>
 				</div>
 			</div>
-		</div>
 	</section>
 	<section class="skills">
-			<div class="wrapper-start content">
-				<h1 class="skill-title">What Can I Do</h1>
-				<h3 class="skill-subtitle"><em class="subtitle-emp">1. </em>Front-End Development</h3>
-				<p class="skill-description"> There's been a lot that has happen in the front-end development space with React and Angular.While these two technologies allow for companies to build big and organize large complex views. The onus is now more on front-end developers to not only look beautiful in different browsers and devices, but to also be structured coherently.<span class="aside"><a href="https://medium.com/@jerrylowm/the-death-of-front-end-developers-803a95e0f411">discussed here</a></span></p>
-				<p class="skill-list">
-				Skills: HTML, CSS, Javascript, React
+			<div class="skills-container">
+				<div class="wrapper-start content">
+					<h1 class="skill-title">What Can I Do</h1>
+					<h3 class="skill-subtitle"><em class="subtitle-emp">1. </em>Front-End Development</h3>
+					<p class="skill-description"> There's been a lot that has happen in the front-end development space with React and Angular.While these two technologies allow for companies to build big and organize large complex views. The onus is now more on front-end developers to not only look beautiful in different browsers and devices, but to also be structured coherently.<span class="aside"><a href="https://medium.com/@jerrylowm/the-death-of-front-end-developers-803a95e0f411">discussed here</a></span></p>
+					<p class="skill-list">
+					Skills: HTML, CSS, Javascript, React
+					</p>
+				</div>
+				<div class="wrapper-end thumbnail">
+					<img src="../img/linkedin-profile-wireframe.svg" id="first-img">
+				</div>
+				<div class="wrapper-start thumbnail">
+					<img src="../img/server.png" class="skill-img">
+				</div>
+				<div class="wrapper-end content">
+					<h3 class="skill-subtitle"><em class="subtitle-emp">2. </em>Back-End Development</h3>
+					<p class="skill-description">
+					The mystical part of applications that goes unseen, but is so vital to the application. The backend can range from simply returning a static webpage to the complex algorithm that ranks webpages when you use google. Not only is it the logic that makes the application possible, but making sure that data persist in databases.Imagine having to readd your friends everytime you went on Facebook? Not only that the data persist , but can be retrieved rapidly. The back-end although not seen is critical to even simple applications
+					</p>
+					<p class="skill-list">
+						Skills: Node.js, PHP, Java, Ruby, Golang(beginner), MySQL, PostgresSQL, MongoDB, DynamodDB
+					</p>
+				</div>
+				<div class="wrapper-start" id="last-content">
+					<h3 class="skill-subtitle"><em class="subtitle-emp">3. </em>Servers, Security and Cloud </h3>
+					<p class="skill-description content">
+					In light of the Equifax data breach server security is of uptmost priority. Did you know that the cause was because of someone not updating the software? Making sure critical ports are only open to certain IP adresses, making sure only your applications can access your database. 
 				</p>
-			</div>
-			<div class="wrapper-end">
-				<img src="../img/linkedin-profile-wireframe.svg" id="first-img">
-			</div>
-			<div class="wrapper-start">
-				<img src="../img/server.png" class="skill-img">
-			</div>
-			<div class="wrapper-end content">
-				<h3 class="skill-subtitle"><em class="subtitle-emp">2. </em>Back-End Development</h3>
 				<p class="skill-description">
-				The mystical part of applications that goes unseen, but is so vital to the application. The backend can range from simply returning a static webpage to the complex algorithm that ranks webpages when you use google. Not only is it the logic that makes the application possible, but making sure that data persist in databases.Imagine having to readd your friends everytime you went on Facebook? Not only that the data persist , but can be retrieved rapidly. The back-end although not seen is critical to even simple applications
+					Cloud is here to stay. Everything from it's pay as you go pricing model , to it's ability to scale from 10k to 1 million users in mere minutes, and their top tier security. Is why many startup's have been able to spin up with small budgets, and why Netflix uses Amazon Web Services infastrure for more than 90% of their uses cases.
 				</p>
 				<p class="skill-list">
-					Skills: Node.js, PHP, Java, Ruby, Golang(beginner), MySQL, PostgresSQL, MongoDB, DynamodDB
+					Skills: AWS, Google Cloud, Unix/Linux, Cloudformation, Ansible, Chef, Nginx, Docker and Kubernetes
 				</p>
-			</div>
-			<div class="wrapper-start" id="last-content">
-				<h3 class="skill-subtitle"><em class="subtitle-emp">3. </em>Servers, Security and Cloud </h3>
-				<p class="skill-description content">
-				In light of the Equifax data breach server security is of uptmost priority. Did you know that the cause was because of someone not updating the software? Making sure critical ports are only open to certain IP adresses, making sure only your applications can access your database. 
-			</p>
-			<p class="skill-description">
-				Cloud is here to stay. Everything from it's pay as you go pricing model , to it's ability to scale from 10k to 1 million users in mere minutes, and their top tier security. Is why many startup's have been able to spin up with small budgets, and why Netflix uses Amazon Web Services infastrure for more than 90% of their uses cases.
-			</p>
-			<p class="skill-list">
-				Skills: AWS, Google Cloud, Unix/Linux, Cloudformation, Ansible, Chef, Nginx, Docker and Kubernetes
-			</p>
-			<p class="skill-list">
-				Validate my <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-09-07&ci=AWS00314667&dm=80">AWS Solutions Architect - Associate</a> or <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2017-09-12&ci=AWS00314667&dm=80">AWS Developer - Associate</a> certificates
-			</p>
-			</div>
-			<div class="wrapper-end content" id="last-content">
-				<img src="../img/cloud.png" id="cloud">
-				<!-- <img src="../img/awscert.png" class="aws-cert">
-				<img src="../img/awsda.png" class="aws-cert">
-				<img src="../img/awssa.png" class="aws-cert"> -->
+				<p class="skill-list">
+					Validate my <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2017-09-07&ci=AWS00314667&dm=80">AWS Solutions Architect - Associate</a> or <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2017-09-12&ci=AWS00314667&dm=80">AWS Developer - Associate</a> certificates
+				</p>
+				</div>
+				<div class="wrapper-end thumbnail" id="last-content">
+					<img src="../img/cloud.png" id="cloud">
+					<!-- <img src="../img/awscert.png" class="aws-cert">
+					<img src="../img/awsda.png" class="aws-cert">
+					<img src="../img/awssa.png" class="aws-cert"> -->
+				</div>
 			</div>
 	</section>
 	<footer class="footer">
-		<div class=".sm-container">
+		<div class="sm-container">
 			<span class="sm-item">
 				<a href="https://www.linkedin.com/in/adrian-l/">
-					<i class="fa fa-2x fa-linkedin-square"aria-hidden="true"></i>
+					<i class="fa fa-3x fa-linkedin-square"aria-hidden="true"></i>
 				</a>
 			</span>
 			<span class="sm-item">
 				<a href="https://github.com/AdrianLayton/">
-					<i class="fa fa-2x fa-github-square" aria-hidden="true"></i>
+					<i class="fa fa-3x fa-github-square" aria-hidden="true"></i>
 				</a>
 			</span>
 			<span class="sm-item">
 				<a href="https://www.youtube.com/channel/UCIph6N7Y62kDTtLydTQqCzQ/featured?view_as=subscriber">
-					<i class="fa fa-2x fa-youtube-square" aria-hidden="true"></i>
+					<i class="fa fa-3x fa-youtube-square" aria-hidden="true"></i>
 				</a>
 			</span>
 		</div>
+		<div class="logo-container">
+			<img class="logo" src="./img/ddlogo.png">
+		</div>
 		<div class="copyright">
-			DynamoDev © 2018
+			© 2018 DynamoDev
 		</div>
 	</footer>
 </body>
