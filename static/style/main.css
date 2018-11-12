@@ -152,8 +152,8 @@ a {
 	display: inline-block;
     color: rgb(255,255,255);
     transition: transform 1.2s cubic-bezier(1,0,.25,1);
-    line-height: 1;
-    font-size: 4.5em;
+    line-height: 1.25em;
+    font-size: 3.15em;
     font-family: sans-serif;
 }
 
@@ -161,7 +161,7 @@ a {
 	background-color: rgba(0,0,0,0.2);
 	height: 100%;
 	width: 100%;
-	padding: 2em 1em;
+	padding: 1em .5em 1em .5em;
 }
 
 /************ SKILLS ************/
@@ -241,7 +241,6 @@ a {
 
 
 .wrapper-start {
-	/*padding: .5em 55% 0em 5%;*/
 	margin-top: 2em;
 	flex-basis: 40%;
 	padding: 0 0 2em 15%;
@@ -252,7 +251,6 @@ a {
 }
 
 .wrapper-end {
-	/*padding: 1em 5%;*/
 	margin-top: 2em;
 	flex-basis: 37%;
 	padding: 0 0 2em 18%;
@@ -363,31 +361,75 @@ a {
 .blog-content {
 	background-color: white;
 	display: flex;
+	flex-direction: column; 
+	margin-bottom: 2em auto;
+}
+.blog-header-ctn {
+	display: block;
+	width: 45%;
+	flex-basis: 45%;
+	max-width: 500px;
+	margin: 4em auto 0;
+}
+
+.blog-header {
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: bold;
+	margin-top: .25em;
+	margin-bottom: .35em;
+}
+
+.blog-post-ctn {
+	margin-left: 4em;
+	margin-right: 4em;
+	margin-top: 4em;
+	margin: 2em 4em 4em 4em;  
 }
 
 .blog-post {
 	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 	width: 30%;
 	max-width: 400px;
-	
+	flex-basis: 30%;
+	border: .05em solid rgb(25,25,25);
+	padding: .5em .65em;
+	box-shadow: 0 0.125em 0.125em 0em rgb(30,30,30);
 }
 
-.thumbnail-container {
-	width: 97%;
+.thumbnail-ctn {
+	width: 93%;
+	margin: .25em 3.4%;
+	overflow: hidden;
 }
 
 .blog-thumbnail {
-
+	width: 100%;
+	max-height: 11em;
+}
+.blog-metadata {
+	width: 100%;
 }
 
-.blog-blurb {
-
+.blog-title {
+	text-align: center;
+}
+.blog-date {
+	text-align: right;
+	margin-bottom: -.3em;
 }
 
+.blog-date span {
+	font-size: .6em;
+}
+
+/************ ABOUT ************/
 
 /************ Phone Media Queries ************/
 
-@media (min-width: 300px) {
+@media (min-width: 300px and max-width: 600px) {
 	.header-content {
 		background-size: 100% 12em;
 		background-repeat: no-repeat;
@@ -405,59 +447,79 @@ a {
 		top: -2.5em;
 	}
 	.skills {
-		margin-top: 3em
+		margin-top: 3em;
 		top: 0;
 		flex-direction: column;
 	}
-	
-	.skills-container {
+	./*skills-container {
 		margin: 0 auto;
 		width: 100%;
+	}*/
+	/*.wrapper-start {
+		padding: 0; 
 	}
-	.wrapper-start {
-		padding: 0 0;
-		align-self: center;
-	}
+	.wrapper-end {
+		padding: 0;
+	}*/
 	.content {
 		flex-basis: 80%;
-		margin: 0 auto;
+		margin: 0.25em 10%;
 	}
 	.thumbnail {
 		flex-basis: auto;
 		margin: 0 auto;	
 	}
-	.wrapper-start:nth-child(1) {
-		order: -6;
-		flex-basis: 85%;
-		margin: 0 7.5%;
+	.skill-subtitle {
+		align-self: center;
+		font-size: 2em;
+	}
+	.skill-list {
+		flex-basis: 45%;
+		margin: 0 37.5%;
+	}
+	.skill-description {
+		font-size: 1.5em;
+		line-height: 1.5em;
 	}
 	.wrapper-start:nth-child(1) h1.skill-title {
 		margin-left: -.7em;
 	}
-	.wrapper-end:nth-child(1) {
-		order: -5;
-		flex-basis: 25%;
-		margin: 0 37.5%;
+	#one {
+		order: 1;
+		flex-basis: 80%;
+		margin: 0 10% 3em 10%; 
+		padding: 0;
 	}
-	.wrapper-end:nth-child(2) {
-		order: -4;
+	#two {
+		order: 2;
+		flex-basis: 15.05em;
+		width: 15.05em;
+		margin: 0 auto;
+		padding: 0;
 	}
-	.wrapper-start:nth-child(2) {
-		order: -3;
+	#three {
+		order: 3;
+		flex-basis: 80%;
+		margin: 0 10% 3em 10%; 
+		padding: 0;
 	}
-	.wrapper-start:nth-child(3) {
-		order: -2;
+	#four {
+		order: 4;
+		padding: 0;
 	}
-	.wrapper-end:nth-child(3) {
-		order: -1;
-	}	
-	.wrapper-start {
-		flex-basis: 90%
-		padding: 0 5%;
+	#five {
+		order: 5;
+		padding: 0;
+		margin: 0 0 3em 0;
+	}
 
+	#six {
+		order: 6;
+		padding: 0;
+		margin: 0 0 3em 0;
 	}
 }
 
-@media screen and (min-width: 600px) and (max-width: 900px) {
+@media screen and (min-width: 600px) and (max-width: 1000px) {
 
 }
