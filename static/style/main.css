@@ -427,12 +427,18 @@ a {
 }
 
 /************ BLOG CSS ************/
+.be-header {
+	padding-top: 1.25em;
+}
+
 .be-title {
 	text-align: center;
 }
 
 .be-meta {
 	margin-top: .625rem;
+	padding-top: .55em;
+	padding-bottom: .55em;
 	text-align: center;
 	align-content: center;
 	border-top: 1px dotted #ebebeb;
@@ -441,6 +447,15 @@ a {
 	margin: 0 auto;
 }
 
+.be-container {
+	width: 75%;
+	margin-left: 12.5%;
+	padding-bottom: 1.65em;
+}
+
+.be-p {
+	
+}
 /************ ABOUT ************/
 
 .about-section {
